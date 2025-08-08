@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wdth@75..100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.navbar {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #880e4f;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.nav-links li a:hover {
+    font-weight: bolder;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    padding: 10px 20px 10px 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f3f4f6;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.container img {
+    width: 170px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.container .card button {
+    text-align: center;
+    width: 70px;
+    font-size: 9px;
+    margin: 3px 0px;
+    padding: 5px;
+    background-color: blue;
+    border: white;
+    border-radius: 5px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container .card button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.container .card img:hover {
+    transform: perspective(600px) rotateX(5deg) rotateY(5deg) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #f2f2f2;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
